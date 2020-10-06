@@ -13,7 +13,7 @@ import * as actions from '../../store/actions/index';
 
 
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
 
     // constructor (props) {
     //     super(props);
@@ -25,12 +25,10 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         this.props.onInitIngredients();
     }
 
     updatePurchaseState(ingredients) {
-        console.log('[Ingredients]: ', ingredients);
         const sum = Object.keys(ingredients)
             .map(igKey => {
                 return ingredients[igKey];

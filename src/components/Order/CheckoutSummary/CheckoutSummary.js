@@ -1,4 +1,3 @@
-import autoprefixer from 'autoprefixer';
 import React from 'react';
 
 import Burger from '../../Burger/Burger';
